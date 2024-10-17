@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de notícias com informações atualizadas sobre política, esportes, entretenimento, e muito mais.">
+    <title>Notícias Agora - Sua fonte de informação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .highlight-news, .news-category {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .highlight-news article, .news-category article {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 40px);
+            max-width: calc(33.333% - 40px);
+        }
+        .highlight-news article img, .news-category article img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .highlight-news h2, .news-category h2 {
+            margin: 0 0 10px 0;
+        }
+        .highlight-news p, .news-category p {
+            font-size: 14px;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .highlight-news article, .news-category article {
+                flex: 1 1 calc(50% - 40px);
+                max-width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+            }
+            .highlight-news article, .news-category article {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Notícias Agora</h1>
+</header>
+
+<nav>
+    <a href="#home">Início</a>
+    <a href="#politica">Política</a>
+    <a href="#esportes">Esportes</a>
+    <a href="#entretenimento">Entretenimento</a>
+    <a href="#economia">Economia</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<div class="container">
+    <!-- Notícias em Destaque -->
+    <section class="highlight-news">
+        <article>
+            <img src="https://media.seudinheiro.com/uploads/2023/10/Dolar-vai-acabar.jpg" alt="Notícia 1">
+            <h2>"dólar em queda"</h2>
+            <p> Brasília, 17 de outubro de 2024 — O dólar americano fechou nesta quarta-feira em R$ 3,75, marcando seu menor valor em cinco anos. A queda contínua da moeda norte-americana vem sendo impulsionada por uma combinação de fatores econômicos globais e locais, incluindo o fortalecimento das economias emergentes e a política monetária expansionista adotada pelos Estados Unidos nos últimos meses.
+
+                Segundo especialistas, a desvalorização do dólar frente ao real pode ter efeitos positivos e negativos para a economia brasileira. Por um lado, o custo de importação de bens e insumos tende a cair, o que pode beneficiar indústrias que dependem de produtos importados, como o setor de tecnologia e o farmacêutico. "O barateamento dos produtos importados alivia as despesas das empresas, permitindo maior competitividade no mercado interno", afirma Júlia Costa, economista-chefe da Associação Brasileira de Comércio Exterior (ABCE).</p>
+        </article>
+        <article>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs5DwC7ciKkp-MUQ8vYDANZxwgBr1DWh_jwg&s" alt="Notícia 2">
+            <h2>"gol milagroso"</h2>
+            <p>Flamengo Conquista o Título da Libertadores em Virada Histórica
+                Rio de Janeiro, 15 de outubro de 2024 — Em um dos jogos mais emocionantes da história da Copa Libertadores, o Flamengo venceu o Boca Juniors por 3 a 2, de virada, e garantiu seu terceiro título continental. A partida, disputada no Estádio Monumental de Lima, no Peru, foi marcada por muita intensidade e reviravoltas no placar, deixando os torcedores à beira do colapso.
+                
+                O Boca Juniors começou pressionando e abriu o placar com um gol de cabeça de Facundo Pérez aos 25 minutos do primeiro tempo. Logo depois, o time argentino ampliou com um chute forte de Gonzalo Martínez, que pegou a defesa do Flamengo desprevenida. No entanto, o técnico rubro-negro, Carlos Souza, fez alterações estratégicas no intervalo, que mudaram completamente o rumo do jogo..</p>
+        </article>
+        <article>
+            <img src="https://www.barbacenamais.com.br/images/20213/0001-12-politicos-gatos-brasil.jpg" alt="Notícia 3">
+            <h2>"escandálo politico"</h2>
+            <p>RMinistro da Economia Envolvido em Escândalo de Corrupção; Governo Sob Pressão
+                Brasília, 16 de outubro de 2024 — O Ministro da Economia, Ricardo Sampaio, está no centro de um escândalo de corrupção que abalou o governo nesta semana. Documentos vazados revelaram que Sampaio teria recebido propinas milionárias de grandes empresas do setor de construção em troca de facilitação de contratos públicos. O caso, que está sendo chamado de "Operação Concreto", envolve também outros membros de alto escalão do governo e empresários influentes.
+                
+                De acordo com o Ministério Público Federal (MPF), a investigação começou há seis meses, mas os novos documentos fornecidos por um delator anônimo trouxeram à tona provas contundentes de que o ministro teria utilizado sua posição para favorecer empresas em licitações públicas em obras de infraestrutura. As propinas, supostamente repassadas por meio de contratos falsos e empresas de fachada, totalizariam mais de R$ 50 milhões.</p>
+        </article>
+    </section>
+
+    <!-- Categorias de Notícias -->
+    <section class="news-category" id="politica">
+        <article>
+            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvM8WsmNR0myB1Pf4etCN9FSLwB_aT1z1hiQ&s" 
+                <h2> urnas com defeito</h2>   
+            <p>"Urnas com Defeitos Geram Polêmica e Adiam Apuração em Diversos Estados
+                Brasília, 16 de outubro de 2024 — A apuração dos votos das eleições gerais de 2024 foi marcada por um imprevisto que abalou o processo eleitoral em várias partes do país. De acordo com o Tribunal Superior Eleitoral (TSE), centenas de urnas eletrônicas apresentaram defeitos durante a votação, o que gerou atrasos e a necessidade de substituição dos equipamentos em diversos estados. A situação provocou tumultos em algumas seções eleitorais e gerou desconfiança em grupos opositores, que já pedem uma investigação detalhada sobre o caso.
+                
+                O problema foi detectado logo nas primeiras horas de votação, com relatos de urnas que travavam ou reiniciavam constantemente. As falhas foram mais comuns em estados como São Paulo, Minas Gerais e Rio de Janeiro, os maiores colégios eleitorais do país. Segundo o TSE, aproximadamente 5% das urnas tiveram que ser substituídas, o que representou um aumento significativo em relação às eleições anteriores, quando a substituição foi inferior a 1%." .</p>
+        </article>
+        <article>
+            <img src="https://supermimico.com.br/wp-content/uploads/2019/08/mimico-conheca-01-2.png" alt="Política Notícia 2">
+            <h2>"viradas culturais trazem mimicos internacionais"</h2>
+            <p>Companhia Francesa de Mímica Encanta o Brasil em Turnê Nacional
+                São Paulo, 10 de outubro de 2024 — A renomada companhia francesa de mímica Les Silencieux está em turnê pelo Brasil, encantando o público com suas performances silenciosas e carregadas de emoção. A turnê, intitulada "O Silêncio das Cidades", percorre oito capitais brasileiras, com apresentações que misturam humor, poesia e crítica social, utilizando apenas gestos e expressões corporais.
+                
+                A primeira apresentação, realizada no Teatro Municipal de São Paulo, foi recebida com aplausos calorosos de uma plateia completamente cativada. No palco, os mímicos deram vida a histórias cotidianas, com narrativas que iam desde os pequenos dramas da vida urbana até críticas sutis sobre a correria e desconexão das grandes metrópoles. Sem proferir uma única palavra, os artistas transmitiram mensagens profundas através de movimentos meticulosos e expressões faciais precisas.
+                
+                O Sucesso da Companhia Les Silencieux</p>
+        </article>
+        <article>
+            <img src="https://img.freepik.com/fotos-gratis/linda-praia-tropical-mar-oceano-ao-por-do-sol-ou-nascer-do-sol-para-viagens-de-ferias_74190-14738.jpg?semt=ais_hybrid" alt="Política Notícia 3">
+            <h2>"verão"</h2>
+            <p>Verão Escaldante Aumenta Número de Banhistas em Praias de Todo o Brasil
+                Rio de Janeiro, 20 de janeiro de 2024 — Com temperaturas que ultrapassam os 40°C em várias regiões do país, as praias brasileiras estão lotadas como nunca. O verão de 2024 tem registrado um dos maiores aumentos de banhistas dos últimos anos, levando milhares de pessoas a buscarem alívio no mar. No Rio de Janeiro, São Paulo, Bahia e outras capitais litorâneas, as principais praias têm ficado lotadas diariamente, especialmente nos fins de semana, gerando preocupação quanto à infraestrutura e à segurança dos frequentadores.
+                
+                Na Praia de Copacabana, no Rio de Janeiro, cerca de 200 mil banhistas tomaram conta da orla no último domingo, de acordo com a Secretaria Municipal de Turismo.</p>
+        </article>
+    </section>
+</div>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2024 Notícias Agora. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
